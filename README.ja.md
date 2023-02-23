@@ -175,6 +175,21 @@ mskyimg.bash -s800 -pss ~/photo/screenshot.png
 スクリプトが成功すれば圧縮されたファイルがカレントディレクトリに残る。
 失敗した場合はその旨表示される。
 
+## 既知の問題
+
+### OpenSUSE Leap15.4でAVIFに変換できない
+
+2023-02-23時点でOpenSUSE Leap 15.4のavifencのバージョンは0.9.3であるため、`--ignore-exif`がなく、失敗する。
+
+より新しいlifavifを使えば問題は解決するが、LinuxユーザーであればArchlinuxを使うのが良いだろう。
+Windowsユーザーの場合、Ubuntuならうまくいくかもしれないし、OpenSUSE LeapよりはOpenSUSE Tunbleweedのほうがうまくいきやすいはずだ。
+
+### jpegoptimでfailed to set output file modeと言われる
+
+報告は受けているが再現しなかった。
+
+状況が特定できたら教えてほしい。
+
 ## オプション指定についてのアドバイス
 
 ### AVIF? WebP?
